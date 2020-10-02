@@ -46,7 +46,7 @@ article {
   padding: 20px;
   width: 70%;
   background-color: #f1f1f1;
-  height: 700px; /* only for demonstration, should be removed */
+  height: 300px; /* only for demonstration, should be removed */
 }
 
 /* Clear floats after the columns */
@@ -106,9 +106,9 @@ footer {
 <section>
   <nav>
     <ul>
-     <a type="Button" onclick="myfunction2()">London</a>
-     <a type="Button" onclick="myfunction3()">Paris</a>
-     <a type="Button" onclick="myfunction4()">Tokyo</a>
+     <li><a type="Button" onclick="myfunction2()">London</a></li>
+     <li><a type="Button" onclick="myfunction3()">Paris</a></li>
+     <li><a type="Button" onclick="myfunction4()">Tokyo</a></li>
     </ul>
   </nav>
 
@@ -123,14 +123,14 @@ footer {
   <p id="Paris"><a style="color:black;"></a></p>
   <script>
   function myfunction3() {
-    document.getElementById("Paris").innerHTML = 
+    document.getElementById("London").innerHTML = 
     "Paris is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.";
   }
   </script>
   <p id="Tokyo"><a style="color:black;"></a></p>
   <script>
     function myfunction4() {
-    document.getElementById("Tokyo").innerHTML = 
+    document.getElementById("London").innerHTML = 
     "Tokyo is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.";
     }
 </script>
