@@ -112,7 +112,7 @@ footer {
      <li><a type="Button" onclick="myfunction2()">London</a></li>
      <li><a type="Button" onclick="myfunction3()">Paris</a></li>
      <li><a type="Button" onclick="myfunction4()">Tokyo</a></li>
-     <li><a type="button" onclick="myCanvas()">piggy's library</a></li>
+     <li><a type="button" onclick="myCanvas(0)">piggy's library</a></li>
     </ul>
   </nav>
 <!-- for new "topic" each button will have to represent it. -->
@@ -140,8 +140,6 @@ footer {
 </script>
 <!-- can not nest button inside button -->
 
- <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
-</canvas>
 <script>
   function myCanvas(sw) {
 var c = document.getElementById("myCanvas");
@@ -162,13 +160,8 @@ document.getElementById('London');
   }
 </script>
 
- <script>
-    function myCanvas() {
-    document.getElementById("London").HTMLCanvasElement = 
-    "myCanvas";
-    }
-</script>
-
+ <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+</canvas>
   </article>
 </section>
 
