@@ -113,6 +113,7 @@ footer {
      <li><a type="Button" onclick="myfunction3()">Paris</a></li>
      <li><a type="Button" onclick="myfunction4()">Tokyo</a></li>
      <li><a type="button" onclick="myCanvas(0)">piggy's library</a></li>
+     <li><a type="button" onclick="myCanvas(1)">piggy's library</a></li>
     </ul>
   </nav>
 <!-- for new "topic" each button will have to represent it. -->
@@ -142,8 +143,8 @@ footer {
 
 <script>
   function myCanvas(sw) {
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
+     var c = document.getElementById("myCanvas");
+     var ctx = c.getContext("2d");
 // Create gradient
 var grd = ctx.createLinearGradient(0,0,200,0);
 grd.addColorStop(0,"blue");
@@ -152,9 +153,18 @@ grd.addColorStop(1,"red");
 ctx.fillStyle = grd;
 ctx.fillRect(10,10,150,80);
 if (sw=0) {
+  c = "myCanvas";
+} 
+ var cx = c.getContext("2d");
+// Create gradient
+var grd = cx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"green");
+grd.addColorStop(1,"yellow");
+// Fill with gradient
+cx.fillStyle = grd;
+cx.fillRect(10,10,150,80);
+else {
   c = "myCanvas"
-} else {
-  c = ""
 }
   }
 </script>
