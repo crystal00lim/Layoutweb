@@ -9,7 +9,7 @@ body {
 
 /* Style the header */
 header {
-  background-color: rbga(106, 90,205, 50%);
+  background-color: rbga(106, 90,205, 30%);
   padding: 30px;
   text-align: center;
   font-size: 35px;
