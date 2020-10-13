@@ -4,17 +4,16 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url("Pos.Neg-1.jpg");
 }
 
 /* Style the header */
 header {
-  background-color: #666;/*color is HEX, but can also use css names.*/
-  padding: 10px;
-  text-align: left;
+  background-color: rbga(106, 90,205, 50%);
+  padding: 30px;
+  text-align: center;
   font-size: 35px;
   color: white;
-  width: 100%;
-  height: 200px;
 }
 
 /* Create two columns/boxes that floats next to each other */
@@ -22,8 +21,11 @@ nav {
   float: left;
   width: 30%;
   height: 300px; /* only for demonstration, should be removed */
-  background: powderblue;
+  background: rgba(176, 244, 230, 30%);
+  opacity: 0.3;
   padding: 20px;
+  color: white;
+  opacity: 1.0;
 }
 
 /* Style the list inside the menu */
@@ -36,8 +38,9 @@ article {
   float: left;
   padding: 20px;
   width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
+  background-color: rgba(250, 235, 215, 30%);
+  height: 300px;
+  color: white /* only for demonstration, should be removed */
 }
 
 /* Clear floats after the columns */
@@ -49,7 +52,7 @@ section:after {
 
 /* Style the footer */
 footer {
-  background-color: pink;
+  background-color: rgba(255, 192, 203, 30%);
   padding: 10px;
   text-align: center;
   color: white;
