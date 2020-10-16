@@ -91,3 +91,28 @@ footer {
     border: 2px solid black;
     margin: 20px;
     padding: 20px;
+   }
+
+.icon {
+  width: 100px;
+  height: 100px;
+}
+
+body {
+  padding: 30px;
+}
+
+.expand-link {
+  display: inline-block;
+}
+.expand-link .icon-contract {
+  display: none;
+}
+.expand-link:hover .icon-expand,
+.expand-link:active .icon-expand {
+  display: none;
+}
+.expand-link:hover .icon-contract,
+.expand-link:active .icon-contract {
+  display: block;
+}
