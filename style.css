@@ -116,3 +116,6 @@ body {
 .expand-link:active .icon-contract {
   display: block;
 }
+.cloud {
+  text-align: center;
+}
