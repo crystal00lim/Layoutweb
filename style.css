@@ -39,8 +39,7 @@ article {
   padding: 20px;
   width: 70%;
   background-color: rgba(250, 235, 215, 30%);
-  height: 300px;
-  color: white /* only for demonstration, should be removed */
+  color: white; /* only for demonstration, should be removed */
 }
 
 /* Clear floats after the columns */
