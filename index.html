@@ -58,7 +58,7 @@ ctx.fillRect(10,10,150,80);
 <p><br></p>
 <!-- alternative for cloud color. rgb(186, 237, 255) for background. rgb(70, 148, 255)-->
 
-<div class="cloudyday">
+<div class="daytime">
 <svg width="300" height="180">
   <rect x="10" y="10" rx="20" ry="20" width="250" height="150"
   style="fill:white;stroke:transparent;opacity:1" />
@@ -82,7 +82,7 @@ ctx.fillRect(10,10,150,80);
 </div>
 
 <!-- divides day and night  try to make it an interactive if possible  -->
-<div class="cloudyday">
+<div class="nighttime">
 <svg width="400" height="180">
   <rect x="10" y="10" rx="20" ry="20" width="250" height="150"
   style="fill:rgb(23, 51, 79);stroke:transparent;opacity:1" />
@@ -111,20 +111,12 @@ ctx.fillRect(10,10,150,80);
 <svg display="none" version="1.1" width="100" height="150" viewBox="0 0 100 150">
 <defs>
 <g id="icon-expand" >
-    <path class="path1" fill="url(#sunset)" d="M10 100 C 1 100, -5 50, 35 80 C 40 90, 25 70, 45 60 C 50 25, 90 30, 100 60 C 100 60, 150 8, 135 90 C 150 40, 200 100, 150 100 z M 30.000 60.000 L 35.878 63.090 L 34.755 56.545 L 39.511 51.910 L 32.939 50.955 L 30.000 45.000 L 27.061 50.955 L 20.489 51.910 L 25.245 56.545 L 24.122 63.090 L 30.000 60.000 M 120.000 35.000 L 125.878 38.090 L 124.755 31.545 L 129.511 26.910 L 122.939 25.955 L 120.000 20.000 L 117.061 25.955 L 110.489 26.910 L 115.245 31.545 L 114.122 38.090 L 120.000 35.000 M 150.000 55.000 L 155.878 58.090 L 154.755 51.545 L 159.511 46.910 L 152.939 45.955 L 150.000 40.000 L 147.061 45.955 L 140.489 46.910 L 145.245 51.545 L 144.122 58.090 L 150.000 55.000"></path>
+    <path class="path1" fill="rgb(23, 51, 79)" d="M10 100 C 1 100, -5 50, 35 80 C 40 90, 25 70, 45 60 C 50 25, 90 30, 100 60 C 100 60, 150 8, 135 90 C 150 40, 200 100, 150 100 z M 30.000 60.000 L 35.878 63.090 L 34.755 56.545 L 39.511 51.910 L 32.939 50.955 L 30.000 45.000 L 27.061 50.955 L 20.489 51.910 L 25.245 56.545 L 24.122 63.090 L 30.000 60.000 M 120.000 35.000 L 125.878 38.090 L 124.755 31.545 L 129.511 26.910 L 122.939 25.955 L 120.000 20.000 L 117.061 25.955 L 110.489 26.910 L 115.245 31.545 L 114.122 38.090 L 120.000 35.000 M 150.000 55.000 L 155.878 58.090 L 154.755 51.545 L 159.511 46.910 L 152.939 45.955 L 150.000 40.000 L 147.061 45.955 L 140.489 46.910 L 145.245 51.545 L 144.122 58.090 L 150.000 55.000"></path>
 </g>
 <g id="icon-contract" >
-    <path class="path1" fill="url(#sunrise)" d="M10 100 C 1 100, -5 50, 35 80 C 40 90, 25 70, 45 60 C 50 25, 90 30, 100 60 C 100 60, 150 8, 135 90 C 150 40, 200 100, 150 100 z M 52 25 A 14 14 0 1 1 51 20" fill="white"></path>
+    <path class="path1" fill="white" d="M10 100 C 1 100, -5 50, 35 80 C 40 90, 25 70, 45 60 C 50 25, 90 30, 100 60 C 100 60, 150 8, 135 90 C 150 40, 200 100, 150 100 z M 52 25 A 14 14 0 1 1 51 20" fill="white">
+   </path>
 </g>
-
-  <linearGradient id="sunset" x1="0%" y1="100%" x2="0%" y2="0%">
-    <stop offset="0%" style="stop-color:rgba(13, 44, 218, 0.856);stop-opacity:1" />
-    <stop offset="100%" style="stop-color:rgb(249, 232, 48);stop-opacity:0.9" />
-    </linearGradient>
-  <linearGradient id="sunrise" x1="0%" y1="100%" x2="0%" y2="0%">
-    <stop offset="0%" style="stop-color:rgb(45, 82, 255);stop-opacity:1" />
-    <stop offset="100%" style="stop-color:rgb(249, 232, 48);stop-opacity:0.9" />
-    </linearGradient>
 </defs>
 </svg>
 
