@@ -4,9 +4,9 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("Pos.Neg-1.jpg");
+  background-color: grey;
 }
-
+/* url("Pos.Neg-1.jpg") */
 /* Style the header */
 header {
   background-color: rbga(106, 90,205, 30%);
@@ -21,13 +21,12 @@ nav {
   float: left;
   width: 30%;
   height: 300px; /* only for demonstration, should be removed */
-  background: rgba(176, 244, 230, 30%);
-  opacity: 0.3;
+  background: rgba(176, 244, 230, 0.8);
   padding: 20px;
-  color: white;
+  color: mediumslateblue;
   opacity: 0.9;
 }
-
+/* background color of nav. original: rgba(176, 244, 230, 30%) */
 /* Style the list inside the menu */
 nav ul {
   list-style-type: none;
@@ -41,7 +40,7 @@ article {
   background-color: rgba(250, 235, 215, 30%);
   color: white; /* only for demonstration, should be removed */
 }
-
+/* background original color rgba(250, 235, 215, 30%) */
 /* Clear floats after the columns */
 section:after {
   content: "";
@@ -80,7 +79,7 @@ footer {
         text-decoration: underline;
       }
       a:active {
-        color: pink;
+        color: palevioletred;
         background-color: transparent;
         text-decoration: underline;
       }
@@ -119,5 +118,5 @@ body {
   text-align: left;
 }
 .textlovers {
-  color: blanchedalmond;
+  color: brown;
 }
