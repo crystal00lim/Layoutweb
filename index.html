@@ -30,30 +30,7 @@
   <article>
 <!-- can not nest button inside button -->
 <!-- created a seperate page(this one) that links to the official page. --> 
-<script>
-  function myCanvas(sw) {
-    var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-if (sw==0) {
-// Create gradient
-var grd = ctx.createLinearGradient(0,0,200,0);
-grd.addColorStop(0,"blue");
-grd.addColorStop(1,"red");
-// Fill with gradient
-ctx.fillStyle = grd;
-ctx.fillRect(10,10,150,80);
-} 
-else {
-  var grd = ctx.createRadialGradient(75,50,5,90,60,100);
-grd.addColorStop(0,"red");
-grd.addColorStop(1,"white");
 
-// Fill with gradient
-ctx.fillStyle = grd;
-ctx.fillRect(10,10,150,80);
-}
-  }
-</script>
  <canvas id="myCanvas" width="170" height="100" style="border:2px solid #d3d3d3;">
 </canvas>
 <p><br><br>here are some svg that were coded by me. (The one above is actually a canvas. <br></p>
