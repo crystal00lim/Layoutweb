@@ -37,8 +37,8 @@ article {
   float: left;
   padding: 20px;
   width: 70%;
-  background-color: mintcream;
-  color: midnightblue; /* only for demonstration, should be removed */
+  background-color: grey;
+  color: white; /* only for demonstration, should be removed */
 }
 /* background original color rgba(250, 235, 215, 30%) */
 /* Clear floats after the columns */
