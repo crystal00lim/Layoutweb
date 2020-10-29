@@ -121,7 +121,10 @@ body {
 .textlovers {
   color: brown;
 }
-.myCanvas {
+#Canvas {
+  width: 100%;
   text-align: center;
-  color: rgb(143, 248, 204);
+}
+canvas {
+   display: inline;
 }
