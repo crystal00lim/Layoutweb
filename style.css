@@ -103,17 +103,21 @@ body {
 
 .expand-link {
   display: inline-block;
+  text-align: center;
 }
 .expand-link .icon-contract {
   display: none;
+  text-align: center;
 }
 .expand-link:hover .icon-expand,
 .expand-link:active .icon-expand {
   display: none;
+  text-align: center;
 }
 .expand-link:hover .icon-contract,
 .expand-link:active .icon-contract {
   display: block;
+  text-align: center;
 }
 .cloudyday {
   text-align: center;
