@@ -19,13 +19,4 @@ grd.addColorStop(1,"white");
 ctx.fillStyle = grd;
 ctx.fillRect(10,10,150,80);
 }
-else {
-  var grd = ctx.createRadialGradient(75,50,5,90,60,100);
-grd.addColorStop(0,"transparent");
-grd.addColorStop(1,"transparent");
-
-// Fill with gradient
-ctx.fillStyle = grd;
-ctx.fillRect(10,10,150,80);
-}
   }
