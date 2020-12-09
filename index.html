@@ -1,139 +1,101 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-  </head>
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Coding dump</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
   <body>
     <script src="script.js"></script>
+    <div class="header">
+      <h1>CRYSTAL LIM</h1>
+      <h4>This is a web page dedicated to code.</h4>
+    </div>
+    <div id="navbar">
+      <a href="#">SVG</a>
+      <a href="#">SVG animate</a>
+      <a href="#">Update log</a>
+    </div>  
+    <div class="content">
+      <div class="hello-parent">
+  
+<svg class="hello-word" width="365" height="365" viewBox="0 0 365 365">
+  
+  
+  <g id="H-letter">
+  <line class="H-left-stroke" x1="37" y1="0" x2="37" y2="124" stroke="#000" fill="none" stroke-width="34" />
+  <line class="H-mid-stroke" x1="53" y1="62" x2="88" y2="62" stroke="#000" fill="none" stroke-width="34" />
+  <line class="H-right-stroke" x1="104" y1="0" x2="104" y2="124" stroke="#000" fill="none" stroke-width="34" />
+  </g>
+  
+  <g id="I-letter">
+    <line class="I-main-stroke" x1="258" y1="124" x2="258" y2="55" stroke="#000" fill="none" stroke-width="40"/>
+  </g>
+  <g id="dot-I">
+    <line x1="258" y1="24" x2="258" y2="24" stroke="#FF5851" class="red-dot" />
+  </g>
+  <g id="E-letter">
+    <line class="E-left-stroke" x1="158" y1="0" x2="158" y2="124" stroke="#000" fill="none" stroke-width="34" />
+    <line class="E-top-stroke" x1="174" y1="17" x2="221" y2="17" stroke="#000" fill="none" stroke-width="34" />
+    <line class="E-mid-stroke" x1="174" y1="62" x2="216" y2="62" stroke="#000" fill="none" stroke-width="34" />
+    <line class="E-bottom-stroke" x1="174" y1="107" x2="221" y2="107" stroke="#000" fill="none" stroke-width="34" />
+  </g>
+  <g id="dash">
+    <line class="dash-stroke" x1="0" y1="215" x2="55" y2="215" stroke="#000" fill="none" stroke-width="34"/>
+  </g>
+  <g id="Y-letter">
+    <line class="Y-middle-stroke" x1="114" y1="276" x2="114" y2="199" stroke="#000" fill="none" stroke-width="34"/>
+    <line class="Y-left-stroke" x1="117" y1="210" x2="70" y2="160" stroke="#000" fill="none" stroke-width="34" />
+    <line class="Y-right-stroke" x1="111" y1="210" x2="158" y2="160" stroke="#000" fill="none" stroke-width="34"/>
+  </g>
+<!--  
+  <g id="L-one-letter">
+    <line class="L-one-long-stroke" x1="17" y1="153" x2="17" y2="277" stroke="#000" fill="none" stroke-width="34" />
+    <line class="L-one-short-stroke" x1="33" y1="260" x2="77" y2="260" stroke="#000" fill="none" stroke-width="34" />
+  </g>
+  
+  <g id="L-two-letter">
+    <line class="L-two-long-stroke" x1="104" y1="153" x2="104" y2="277" stroke="#000" fill="none" stroke-width="34" />
+    <line class="L-two-short-stroke" x1="120" y1="260" x2="164" y2="260" stroke="#000" fill="none" stroke-width="34" />
+  </g>
+-->
+  <g id="O-letter">
+    <circle class="O-stroke" cx="241" cy="215" r="48" stroke="#000" fill="none" stroke-width="31" />
+  </g>
+  
+  <g id="red-dot">
+    <!-- Initially I tried creating a circle but it was harder to manipulate it how I wanted to in CSS so I resorted to using a line trick to make it look like a circle ....
+    
+    <circle class="red-dot" cx="325" cy="260" r="20" fill="#FF5851" stroke="none" />
 
-<header>
-  <h2>SVG!</h2>
-  <h6>And a little bit of canvas.</h6>
-</header>
-
-<section>
-  <nav>
-    <p><a href="https://crystal00limgithubio.crystal00lim.repl.co">Click here to return back to original site.</a></p>
-    <p class="textlovers">Here are two buttons that can change the gradient of the empty canvas below!</p>
-    <ul>
-     <li><a type="button" onclick="myCanvas(0)">Linear gradient</a></li>
-     <li><a type="button" onclick="myCanvas(1)">Radial gradient</a></li>
-    </ul>
-  </nav>
-
-<!-- for new "topic" each button will have to represent it. -->
-  <article>
-
-<div id="Canvas">
- <canvas id="myCanvas" width="170" height="100" style="border:2px solid #d3d3d3;">
-</canvas>
-</div>
-<p><br>Here are some svg that were coded by me. (The one above is actually a canvas.) <br></p>
-<!-- alternative for cloud color. rgb(186, 237, 255) for background. rgb(70, 148, 255)-->
-
-<div class="cloudyday">
-<svg id="daytime" width="300" height="180">
-  <rect x="10" y="10" rx="20" ry="20" width="250" height="150"
-  style="fill:white;stroke:transparent;opacity:1" />
-<svg x="33" y="-25">
-<circle cx="100" cy="90" r="30"
-  stroke="transparent" fill="url(#sun)"/>
-<defs>
-  <linearGradient id="sun" x1="0%" y1="100%" x2="0%" y2="0%">
-    <stop offset="0%" style="stop-color:rgb(255,105,62);stop-opacity:1" />
-    <stop offset="100%" style="stop-color:yellow ;stop-opacity:0.9" />
-    </linearGradient>
- </defs>
-<svg x="0" y="50">
-  <path d="M 10 100 C 1 100, -5 50, 35 80 C 40 90, 25 70, 45 60 C 50 25, 90 30, 100 60 C 100 60, 150 8, 135 90 C 150 40, 200 100, 150 100 z" fill="powderblue" stroke="powderblue" opacity="1"/> 
-  <svg x="30" y="0"> 
-    <path d="M 10 100 C 1 100, -5 50, 35 80 C 40 90, 25 70, 45 60 C 50 25, 90 30, 100 60 C 100 60, 150 8, 135 90 C 150 40, 200 100, 150 100 z" fill="powderblue" stroke="powderblue" opacity="0.7"/>
-    </svg>
-    </svg>
-    </svg>
+    -->
+    
+    <line x1="335" y1="260" x2="335" y2="260" stroke="#FF5851" class="red-dot" />
+  </g>
+  
+  
 </svg>
 </div>
+    </div>
 
-<div class="cloudyday">
-<svg id="nighttime" width="300" height="180">
-  <rect x="10" y="10" rx="20" ry="20" width="250" height="150"
-  style="fill:rgb(23, 51, 79);stroke:transparent;opacity:1" />
-<svg x="33" y="-25">
-<circle cx="100" cy="90" r="30"
-  stroke="transparent" fill="url(#moon)"/>
-<defs>
-  <linearGradient id="moon" x1="0%" y1="100%" x2="0%" y2="0%">
-    <stop offset="0%" style="stop-color:rgb(45, 82, 255);stop-opacity:1" />
-    <stop offset="100%" style="stop-color:rgb(249, 232, 48);stop-opacity:0.9" />
-    </linearGradient>
- </defs>
-<svg x="0" y="50">
-  <path d="M 10 100 C 1 100, -5 50, 35 80 C 40 90, 25 70, 45 60 C 50 25, 90 30, 100 60 C 100 60, 150 8, 135 90 C 150 40, 200 100, 150 100 z" fill="rgb(240, 246, 251)" stroke="rgb(240, 246, 251)" opacity="1"/> 
-  <svg x="30" y="0"> 
-    <path d="M 10 100 C 1 100, -5 50, 35 80 C 40 90, 25 70, 45 60 C 50 25, 90 30, 100 60 C 100 60, 150 8, 135 90 C 150 40, 200 100, 150 100 z" fill="rgb(240, 246, 251)" stroke="rgb(240, 246, 251)" opacity="0.7"/>
-  <defs>
-  <linearGradient id="night" x1="0%" y1="100%" x2="0%" y2="0%">
-    <stop offset="0%" style="stop-color:rgb(51, 214, 255);stop-opacity:1" />
-    <stop offset="100%" style="stop-color:rgb(255, 245, 134);stop-opacity:0.9" />
-  </linearGradient>
-  <linearGradient id="day" x1="0%" y1="100%" x2="0%" y2="0%">
-    <stop offset="0%" style="stop-color:rgb(255, 245, 134);stop-opacity:1" />
-    <stop offset="100%" style="stop-color:rgb(249, 95, 48);stop-opacity:0.9" />
-  </linearGradient>
-  <linearGradient id="twilight" x1="0%" y1="100%" x2="0%" y2="0%">
-    <stop offset="0%" style="stop-color:rgb(143, 248, 204);stop-opacity:1" />
-    <stop offset="100%" style="stop-color:rgb(80, 20, 245);stop-opacity:0.9" />
-  </linearGradient>
-    </svg>
-    </svg>
-    </svg>
-</svg>
-</div>
-<!-- sun coordinates M 52 25 A 14 14 0 1 1 51 20 from the website: http://xahlee.info/js/svg_circle_arc.html -->
+<script>
+window.onscroll = function() {myFunction()};
 
-<!-- star 1 coordinates M 30.000 60.000 L 35.878 63.090 L 34.755 56.545 L 39.511 51.910 L 32.939 50.955 L 30.000 45.000 L 27.061 50.955 L 20.489 51.910 L 25.245 56.545 L 24.122 63.090 L 30.000 60.000 from the website: https://www.smiffysplace.com/stars.html -->
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
 
-<!-- star 2 coordinates M 120.000 35.000 L 125.878 38.090 L 124.755 31.545 L 129.511 26.910 L 122.939 25.955 L 120.000 20.000 L 117.061 25.955 L 110.489 26.910 L 115.245 31.545 L 114.122 38.090 L 120.000 35.000 -->
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 
-<!-- star 3 coordinates M 150.000 55.000 L 155.878 58.090 L 154.755 51.545 L 159.511 46.910 L 152.939 45.955 L 150.000 40.000 L 147.061 45.955 L 140.489 46.910 L 145.245 51.545 L 144.122 58.090 L 150.000 55.000 -->
-<!-- rgb(23, 51, 79) rgb(22, 98, 173) rgb(255, 245, 134)-nighttime rgb(2, 228, 228)-->
-
-<svg display="none" version="1.1" width="100" height="150" viewBox="0 0 100 150">
-
-<defs>
-<g id="icon-expand" >
-    <path class="path1" fill="url(#night)" d="M10 100 C 1 100, -5 50, 35 80 C 40 90, 25 70, 45 60 C 50 25, 90 30, 100 60 C 100 60, 150 8, 135 90 C 150 40, 200 100, 150 100 z M 30.000 60.000 L 35.878 63.090 L 34.755 56.545 L 39.511 51.910 L 32.939 50.955 L 30.000 45.000 L 27.061 50.955 L 20.489 51.910 L 25.245 56.545 L 24.122 63.090 L 30.000 60.000 M 120.000 35.000 L 125.878 38.090 L 124.755 31.545 L 129.511 26.910 L 122.939 25.955 L 120.000 20.000 L 117.061 25.955 L 110.489 26.910 L 115.245 31.545 L 114.122 38.090 L 120.000 35.000 M 150.000 55.000 L 155.878 58.090 L 154.755 51.545 L 159.511 46.910 L 152.939 45.955 L 150.000 40.000 L 147.061 45.955 L 140.489 46.910 L 145.245 51.545 L 144.122 58.090 L 150.000 55.000"></path>
-</g>
-
-<g id="icon-contract" >
-    <path class="path1" fill="url(#day)" d="M10 100 C 1 100, -5 50, 35 80 C 40 90, 25 70, 45 60 C 50 25, 90 30, 100 60 C 100 60, 150 8, 135 90 C 150 40, 200 100, 150 100 z M 52 25 A 14 14 0 1 1 51 20" fill="white">
-   </path>
-</g>
-</defs>
-</svg>
-
-<p>Hover your mouse over the svg below to see another svg!<br></p>
-<div id="interactive">
-<a href="#0" class="expand-link">
-  <svg width="300" height="180">
-  <rect x="10" y="1" rx="20" ry="20" width="250" height="150"
-  style="fill:url(#twilight);stroke:transparent;opacity:1" />
-  <svg class="icon icon-expand" viewBox="0 0 200 150"><use xlink:href="#icon-expand"></use></svg>
-  <svg class="icon icon-contract" viewBox="0 0 200 150"><use xlink:href="#icon-contract"></use></svg></svg>
-</a>
-</div>
-  </article>
-</section>
-
-<footer>
-  <p>Thanks for looking. Hope you enjoyed the svg.</p>
-</footer>
   </body>
 </html>

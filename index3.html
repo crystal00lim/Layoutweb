@@ -1,0 +1,149 @@
+<div class="header">
+      <h1 style="font-family:roboto; text-align:center;">CRYSTAL LIM</h1>
+      <h4 style="font-family:roboto; text-align:center;">This is a web page dedicated to code.</h4>
+    </div>
+    <div id="navbar">
+      <a class="active" href="#">Home</a>
+      <a href="#">News</a>
+      <a href="#)">Contact</a>
+    </div>  
+    <div class="content">
+      <h3>Sticky Navigation Example</h3>
+      <p>The navbar will stick to the top when you reach its scroll position.</p>
+    </div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+  <nav>
+    <p><a href="https://crystal00limgithubio.crystal00lim.repl.co">Click here to return back to original site.</a></p>
+    <p class="textlovers">Here are two buttons that can change the gradient of the empty canvas below!</p>
+    <ul>
+     <li><a type="button" onclick="myCanvas(0)">Linear gradient</a></li>
+     <li><a type="button" onclick="myCanvas(1)">Radial gradient</a></li>
+    </ul>
+  </nav>
+
+<!-- for new "topic" each button will have to represent it. -->
+  <article>
+
+<div id="Canvas">
+ <canvas id="myCanvas" width="170" height="100" style="border:2px solid #d3d3d3;">
+</canvas>
+</div>
+<p><br>Here are some svg that were coded by me. (The one above is actually a canvas.) <br></p>
+<!-- alternative for cloud color. rgb(186, 237, 255) for background. rgb(70, 148, 255)-->
+
+<div class="cloudyday">
+<svg id="daytime" width="300" height="180">
+  <rect x="10" y="10" rx="20" ry="20" width="250" height="150"
+  style="fill:white;stroke:transparent;opacity:1" />
+<svg x="33" y="-25">
+<circle cx="100" cy="90" r="30"
+  stroke="transparent" fill="url(#sun)"/>
+<defs>
+  <linearGradient id="sun" x1="0%" y1="100%" x2="0%" y2="0%">
+    <stop offset="0%" style="stop-color:rgb(255,105,62);stop-opacity:1" />
+    <stop offset="100%" style="stop-color:yellow ;stop-opacity:0.9" />
+    </linearGradient>
+ </defs>
+<svg x="0" y="50">
+  <path d="M 10 100 C 1 100, -5 50, 35 80 C 40 90, 25 70, 45 60 C 50 25, 90 30, 100 60 C 100 60, 150 8, 135 90 C 150 40, 200 100, 150 100 z" fill="powderblue" stroke="powderblue" opacity="1"/> 
+  <svg x="30" y="0"> 
+    <path d="M 10 100 C 1 100, -5 50, 35 80 C 40 90, 25 70, 45 60 C 50 25, 90 30, 100 60 C 100 60, 150 8, 135 90 C 150 40, 200 100, 150 100 z" fill="powderblue" stroke="powderblue" opacity="0.7"/>
+    </svg>
+    </svg>
+    </svg>
+</svg>
+</div>
+
+<div class="cloudyday">
+<svg id="nighttime" width="300" height="180">
+  <rect x="10" y="10" rx="20" ry="20" width="250" height="150"
+  style="fill:rgb(23, 51, 79);stroke:transparent;opacity:1" />
+<svg x="33" y="-25">
+<circle cx="100" cy="90" r="30"
+  stroke="transparent" fill="url(#moon)"/>
+<defs>
+  <linearGradient id="moon" x1="0%" y1="100%" x2="0%" y2="0%">
+    <stop offset="0%" style="stop-color:rgb(45, 82, 255);stop-opacity:1" />
+    <stop offset="100%" style="stop-color:rgb(249, 232, 48);stop-opacity:0.9" />
+    </linearGradient>
+ </defs>
+<svg x="0" y="50">
+  <path d="M 10 100 C 1 100, -5 50, 35 80 C 40 90, 25 70, 45 60 C 50 25, 90 30, 100 60 C 100 60, 150 8, 135 90 C 150 40, 200 100, 150 100 z" fill="rgb(240, 246, 251)" stroke="rgb(240, 246, 251)" opacity="1"/> 
+  <svg x="30" y="0"> 
+    <path d="M 10 100 C 1 100, -5 50, 35 80 C 40 90, 25 70, 45 60 C 50 25, 90 30, 100 60 C 100 60, 150 8, 135 90 C 150 40, 200 100, 150 100 z" fill="rgb(240, 246, 251)" stroke="rgb(240, 246, 251)" opacity="0.7"/>
+  <defs>
+  <linearGradient id="night" x1="0%" y1="100%" x2="0%" y2="0%">
+    <stop offset="0%" style="stop-color:rgb(51, 214, 255);stop-opacity:1" />
+    <stop offset="100%" style="stop-color:rgb(255, 245, 134);stop-opacity:0.9" />
+  </linearGradient>
+  <linearGradient id="day" x1="0%" y1="100%" x2="0%" y2="0%">
+    <stop offset="0%" style="stop-color:rgb(255, 245, 134);stop-opacity:1" />
+    <stop offset="100%" style="stop-color:rgb(249, 95, 48);stop-opacity:0.9" />
+  </linearGradient>
+  <linearGradient id="twilight" x1="0%" y1="100%" x2="0%" y2="0%">
+    <stop offset="0%" style="stop-color:rgb(143, 248, 204);stop-opacity:1" />
+    <stop offset="100%" style="stop-color:rgb(80, 20, 245);stop-opacity:0.9" />
+  </linearGradient>
+    </svg>
+    </svg>
+    </svg>
+</svg>
+</div>
+<!-- sun coordinates M 52 25 A 14 14 0 1 1 51 20 from the website: http://xahlee.info/js/svg_circle_arc.html -->
+
+<!-- star 1 coordinates M 30.000 60.000 L 35.878 63.090 L 34.755 56.545 L 39.511 51.910 L 32.939 50.955 L 30.000 45.000 L 27.061 50.955 L 20.489 51.910 L 25.245 56.545 L 24.122 63.090 L 30.000 60.000 from the website: https://www.smiffysplace.com/stars.html -->
+
+<!-- star 2 coordinates M 120.000 35.000 L 125.878 38.090 L 124.755 31.545 L 129.511 26.910 L 122.939 25.955 L 120.000 20.000 L 117.061 25.955 L 110.489 26.910 L 115.245 31.545 L 114.122 38.090 L 120.000 35.000 -->
+
+<!-- star 3 coordinates M 150.000 55.000 L 155.878 58.090 L 154.755 51.545 L 159.511 46.910 L 152.939 45.955 L 150.000 40.000 L 147.061 45.955 L 140.489 46.910 L 145.245 51.545 L 144.122 58.090 L 150.000 55.000 -->
+<!-- rgb(23, 51, 79) rgb(22, 98, 173) rgb(255, 245, 134)-nighttime rgb(2, 228, 228)-->
+
+<svg display="none" version="1.1" width="100" height="150" viewBox="0 0 100 150">
+
+<defs>
+<g id="icon-expand" >
+    <path class="path1" fill="url(#night)" d="M10 100 C 1 100, -5 50, 35 80 C 40 90, 25 70, 45 60 C 50 25, 90 30, 100 60 C 100 60, 150 8, 135 90 C 150 40, 200 100, 150 100 z M 30.000 60.000 L 35.878 63.090 L 34.755 56.545 L 39.511 51.910 L 32.939 50.955 L 30.000 45.000 L 27.061 50.955 L 20.489 51.910 L 25.245 56.545 L 24.122 63.090 L 30.000 60.000 M 120.000 35.000 L 125.878 38.090 L 124.755 31.545 L 129.511 26.910 L 122.939 25.955 L 120.000 20.000 L 117.061 25.955 L 110.489 26.910 L 115.245 31.545 L 114.122 38.090 L 120.000 35.000 M 150.000 55.000 L 155.878 58.090 L 154.755 51.545 L 159.511 46.910 L 152.939 45.955 L 150.000 40.000 L 147.061 45.955 L 140.489 46.910 L 145.245 51.545 L 144.122 58.090 L 150.000 55.000"></path>
+</g>
+
+<g id="icon-contract" >
+    <path class="path1" fill="url(#day)" d="M10 100 C 1 100, -5 50, 35 80 C 40 90, 25 70, 45 60 C 50 25, 90 30, 100 60 C 100 60, 150 8, 135 90 C 150 40, 200 100, 150 100 z M 52 25 A 14 14 0 1 1 51 20" fill="white">
+   </path>
+</g>
+</defs>
+</svg>
+
+<p>Hover your mouse over the svg below to see another svg!<br></p>
+<div id="interactive">
+<a href="#0" class="expand-link">
+  <svg width="300" height="180">
+  <rect x="10" y="1" rx="20" ry="20" width="250" height="150"
+  style="fill:url(#twilight);stroke:transparent;opacity:1" />
+  <svg class="icon icon-expand" viewBox="0 0 200 150"><use xlink:href="#icon-expand"></use></svg>
+  <svg class="icon icon-contract" viewBox="0 0 200 150"><use xlink:href="#icon-contract"></use></svg></svg>
+</a>
+</div>
+
+<a href="index2.html">index2.html</a>
+<button id="result" onclick="darkmode()">darkmode</button>
+
+  </article>
+</section>
+
+<footer>
+  <p>Thanks for looking. Hope you enjoyed the svg.</p>
+</footer>
