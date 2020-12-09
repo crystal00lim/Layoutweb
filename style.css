@@ -56,7 +56,8 @@ html, body, .hello-parent {
 
 .hello-word {
   margin:auto;
-  padding:15px;
+  padding-top:15px;
+  padding-left: 20px;
 }
 /* H Animation */
 
