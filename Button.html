@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="Button.css" rel="stylesheet" type="text/css" />
+  <title>Coding dump</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <script src="script.js"></script>
+  <div class="header">
+  <h1><a href="https://75.crystal00lim.repl.co">CRYSTAL LIM</a></h1>
+  <h4>This is a web page dedicated to code.</h4>
+</div>
+  <nav id="navbar">
+    <div id="navbar" class="navbar-header">
+      <button type="button" class="first-button navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <div class="animated-icon1">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+      <a id="scroll" class="navbar-brand" style="font-family:roboto;" href="https://75.crystal00lim.repl.co">CRYSTAL LIM</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a id="nav" href="index.html">Hei-yo</a></li>
+        <li><a id="nav" href="SVG.html">SVG</a></li>
+        <li><a id="nav" href="Miscelaneous.html">Buttons</a></li>
+      </ul>
+    </div>  
+  </nav>  
+  <div class="content">
+    <div class="col-sm-12 button1">
+      <input type="checkbox" id="lol-checkbox">
+      <label class="bckgrd" id="button" for="lol-checkbox">
+        <div id="knob"></div>
+        <div id="subscribe">dark</div>
+        <div id="alright">light</div>
+      </label>
+    </div>
+  </div>
+  <script>
+  window.onscroll = function() {myFunction()};
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+    } else {
+    navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+</body>
+</html>
