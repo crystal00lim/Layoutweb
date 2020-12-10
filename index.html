@@ -10,13 +10,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <script src="script.js"></script>
-  <div class="header">
-    <h1><a href="https://75.crystal00lim.repl.co">CRYSTAL LIM</a></h1>
-    <h4>This is a web page dedicated to code.</h4>
-  </div>
+<script src="script.js"></script>
+<div class="header">
+  <h1><a href="https://75.crystal00lim.repl.co">CRYSTAL LIM</a></h1>
+  <h4>This is a web page dedicated to code.</h4>
+</div>
   <nav id="navbar">
-  <div id="navbar" class="navbar-header">
+    <div id="navbar" class="navbar-header">
       <button type="button" class="first-button navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <div class="animated-icon1">
           <span></span>
@@ -32,7 +32,6 @@
         <li><a id="nav" href="SVG.html">SVG</a></li>
       </ul>
     </div>  
-  </div>
   </nav>
   <div class="content">
     <div class="hello-parent">
@@ -78,8 +77,10 @@
   function myFunction() {
     if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
+    document.getElementById("scroll").style.display="block";
     } else {
     navbar.classList.remove("sticky");
+    document.getElementById("scroll").style.display="none";
     }
   }
   </script>
