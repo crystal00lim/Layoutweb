@@ -28,7 +28,7 @@ body {
   overflow: hidden;
   background-color: #333;
 }
-#navbar a {
+#navbar #nav {
   float: right;
   display: block;
   color: #f2f2f2;
@@ -49,6 +49,12 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+}
+#scroll {
+  text-align:left;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
 }
 .sticky + .content {
   padding-top: 60px;
@@ -419,6 +425,11 @@ html, body, .hello-parent {
   text-align: center;
   padding-top: 10px;
   padding-bottom:0px;
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+   .collapse {
+       display: none !important;
+   }
 }
 /* Icon 1 */
 .animated-icon1, .animated-icon2, .animated-icon3 {
