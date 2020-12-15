@@ -396,40 +396,6 @@ html, body, .hello-parent {
     stroke-width: 44px;
   }
 }
-.icon {
-  width: 200px;
-  height: 150px;
-  text-align: center;
-}
-.expand-link {
-  display: inline-block;
-  text-align: center;
-}
-.expand-link .icon-contract {
-  display: none;
-  text-align: center;
-}
-.expand-link:hover .icon-expand,
-.expand-link:active .icon-expand {
-  display: none;
-  text-align: center;
-}
-.expand-link:hover .icon-contract,
-.expand-link:active .icon-contract {
-  display: block;
-  text-align: center;
-}
-.cloudyday {
-  text-align: center;
-}
-.cloudynight {
-  text-align:center;
-}
-#interactive {
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom:0px;
-}
 @media (min-width: 768px) and (max-width: 1000px) {
    .collapse {
        display: none !important;

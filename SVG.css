@@ -3,6 +3,9 @@ body {
   font-size: 28px;
   font-family: Arial, Helvetica, sans-serif;
 }
+.tab {
+  text-indent: 30px;
+}
 .header {
   background-color: #f1f1f1;
   padding: 30px;
@@ -61,9 +64,39 @@ body {
 .sticky + .content {
   padding-top: 60px;
 }
-
-input[type="checkbox"] {
+.icon {
+  width: 200px;
+  height: 150px;
+  text-align: center;
+}
+.expand-link {
+  display: inline-block;
+  text-align: center;
+}
+.expand-link .icon-contract {
   display: none;
+  text-align: center;
+}
+.expand-link:hover .icon-expand,
+.expand-link:active .icon-expand {
+  display: none;
+  text-align: center;
+}
+.expand-link:hover .icon-contract,
+.expand-link:active .icon-contract {
+  display: block;
+  text-align: center;
+}
+.cloudyday {
+  text-align: center;
+}
+.cloudynight {
+  text-align:center;
+}
+#interactive {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom:0px;
 }
 @media (min-width: 768px) and (max-width: 1000px) {
    .collapse {
@@ -138,62 +171,4 @@ transform: rotate(-135deg);
 }
 .navbar-inverse {
   opacity:0.9;
-}
-#button {
-  width: 245px;
-  height: 165px;
-  border-radius: 350px;
-  cursor: pointer;
-}
-
-.bckgrd {
-  background-color: #000;
-  -webkit-transition: .4s;
-  transition: .4s;
-  border-style: solid;
-  border-color: white;
-}
-
-#knob {
-  width: 126px;
-  height: 126px;
-  background-image: url('date.png');
-  background-size: 426px;
-  position: relative;
-  top: 17px;
-  left: 15px;
-  border-radius: 290px;
-  transition: 0.4s ease left, 0.4s ease background-position;
-  z-index: 2;
-}
-
-#subscribe,
-#alright {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 30px;
-  font-weight: bold;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-left: 250px;
-  z-index: 1;
-}
-#subscribe {
-  margin-left:148px;
-  color: white;
-}
-#alright {
-  margin-left: 16px;
-  color: black;
-}
-
-#lol-checkbox:checked + #button #knob {
-  left: 99px;
-  background-position: -345px 0;
-}
-
-#lol-checkbox:checked + .bckgrd {
-  background-color: white;
-  border-style: solid;
-  border-color: black;
 }
