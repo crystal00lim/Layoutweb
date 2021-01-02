@@ -201,14 +201,3 @@ transform: rotate(-135deg);
   position: absolute;
   left: 50%;
 }
-.text {
-  animation: hideshow 13s ease infinite;
-}
-@keyframes hideshow {
-  0% { opacity: 0; }
-  10% { opacity: 0; }
-  45% { opacity: 0; }
-  52% { opacity: 1; }
-  60% {opacity: 1;}
-  100% { opacity: 1; }
-} 
