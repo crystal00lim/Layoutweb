@@ -197,7 +197,3 @@ transform: rotate(-135deg);
   border-style: solid;
   border-color: black;
 }
-.countdown {
-  position: absolute;
-  left: 50%;
-}
