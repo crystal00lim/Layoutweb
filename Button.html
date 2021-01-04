@@ -36,24 +36,11 @@
     </div>  
   </nav>  
   <div class="content container-fluid">
-    <div class="col-sm-6">
-  <button onclick="typeWriter()">Cyrano de Bergerac</button>
-  <p id="demo"></p>
+    <div class="parallax"></div>
+    <div class="col-sm-12">
+      <p>"A kiss, when all is said, is--what?<br> A compact sealed, a promise carried out. <br>An oath accomplished and a vow confirmed. <br>The rosy dot upon the "i" in loving. <br>A secret for no ear, but for the lips. <br>The velvet humming of an amorous bee: <br>The endless moment of infinity. <br>The heart's communion cup that tastes of flowers. <br>The breathing in a little of the soul<br> When the pure spirit rises to the lips." <br><span style="text-align:center;">-Edmond Rostand</span></p>
+    </div>
   </div>
-  </div>
-  <script>
-var i = 0;
-var txt = '\"A kiss, when all is said, is--what? A compact sealed, a promise carried out. An oath accomplished and a vow confirmed. The rosy dot upon the \"i\" in loving. A secret for no ear, but for the lips. The velvet humming of an amorous bee: The endless moment of infinity. The heart\'s communion cup that tastes of flowers. The breathing in a little of the soul When the pure spirit rises to the lips.\" -Edmond Rostand';
-var speed = 50;
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-</script>
 <script>
   window.onscroll = function() {myFunction()};
   var navbar = document.getElementById("navbar");
