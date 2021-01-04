@@ -30,41 +30,31 @@
       <ul class="nav navbar-nav">
         <li><a id="nav" href="index.html">Hei-yo</a></li>
         <li><a id="nav" href="SVG.html">SVG</a></li>
-        <li><a id="nav" href="Miscelaneous.html">Buttons</a></li>
+        <li><a id="nav" href="birthday.html">Birthday</a></li>
+        <li><a id="nav" href="Button.html">Text</a></li>
       </ul>
     </div>  
   </nav>  
   <div class="content container-fluid">
-  <div class="col-sm-12">
-    <svg class="countdown" width="200" height="120" viewbox="0 0 200 120">
-      <path stroke-width="10" fill="none" stroke="black">
-        <animate attributeName="d" dur="6000ms" repeatCount="1"      
-      values="
-        M 15 15 L 15 107 M 50 15 C 30 15 30 35 30 40 L 30 80 C 30 100 50 100 50 100 C 70 100 70 80 70 80 L 70 40 C 70 15 50 15 50 15;
-        
-        M 50 15 C 30 15 30 35 30 40 C 30 65 50 65 50 65 C 70 65 70 40 70 40 C 70 15 50 15 50 15 M 70 40 L 70 80 C 70 100 50 100 50 100 C 30 100 30 80 30 80;
-        
-        M 50 15 C 30 15 30 35 30 40 C 30 55 50 55 50 55 C 70 55 70 40 70 40 C 70 15 50 15 50 15 M 50 55 C 50 55 30 55 30 80 C 30 100 50 100 50 100 C 70 100 70 80 70 80 C 70 55 50 55 50 55;
-
-        M 30 15 H 70 C 40 80, 50 100, 50 100;
-              
-        M 70 40 C 70 15 50 15 50 15 C 30 15 30 35 30 40 L 30 80 M 50 55 C 50 55 30 55 30 80 C 30 100 50 100 50 100 C 70 100 70 80 70 80 C 70 55 50 55 50 55;
-              
-        M 70 15 H 30 L 30 60 C 30 60 30 40 50 40 C 70 40 70 60 70 60 C 70 60 70 100 50 100 C 30 100 30 80 30 80;
-              
-        M 40 15 C 40 15, 40 60, 30 60 H 70 M 60 15 V 100;
-              
-        M 30 15 H 70 L 40 50 C 40 50 40 50 50 40 C 70 40 70 60 70 60 C 70 60 70 100 50 100 C 30 100 30 80 30 80; 
-              
-        M 30 40 C 30 40 30 15 50 15 C 50 15 70 15 70 40 L 30 100 H 70;
-              
-        M 30 40 C 50 40, 50 20, 50 15 V 100 M 30 100 H 70; "/>
-      </path>
-    </svg>
+    <div class="col-sm-6">
+  <button onclick="typeWriter()">Cyrano de Bergerac</button>
+  <p id="demo"></p>
   </div>
-</div>
-</div>
+  </div>
   <script>
+var i = 0;
+var txt = '\"A kiss, when all is said, is--what? A compact sealed, a promise carried out. An oath accomplished and a vow confirmed. The rosy dot upon the \"i\" in loving. A secret for no ear, but for the lips. The velvet humming of an amorous bee: The endless moment of infinity. The heart\'s communion cup that tastes of flowers. The breathing in a little of the soul When the pure spirit rises to the lips.\" -Edmond Rostand';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+<script>
   window.onscroll = function() {myFunction()};
   var navbar = document.getElementById("navbar");
   var sticky = navbar.offsetTop;
