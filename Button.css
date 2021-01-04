@@ -209,3 +209,8 @@ transform: rotate(-135deg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+.col-sm-12 {
+  text-align: center;
+  background-color: rgba(241, 241, 241, 0.7);
+  font-family: roboto;
+}
