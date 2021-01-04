@@ -531,17 +531,17 @@ html, body {
   animation: H-left-move 20s ease forwards;
 }
 .P-curve-stroke {
-  stroke-dasharray: 203px;
-  stroke-dashoffset: 203px;
+  stroke-dasharray: 193px;
+  stroke-dashoffset: 100px;
   animation: O-move 20s ease forwards;
 }
 
 @keyframes O-move {
   0% {
-    stroke-dashoffset: 203px;
+    stroke-dashoffset: 100px;
   }
   4% {
-    stroke-dashoffset: 203px;
+    stroke-dashoffset: 100px;
   }
   9% {
     stroke-dashoffset: 0px;
@@ -556,8 +556,8 @@ html, body {
   animation: H-right-move 10s ease forwards;
 }
 .P-curve1-stroke {
-  stroke-dasharray: 203px;
-  stroke-dashoffset: 203px;
+  stroke-dasharray: 205px;
+  stroke-dashoffset: 205px;
   animation: O-move 15s ease forwards;
 }
 
