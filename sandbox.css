@@ -86,7 +86,11 @@ background-color:#000000;
 .navbar {
   background-color:white;
 }
-
+ul {
+  list-style-type: none;
+  margin:0px;
+  padding:0px;
+}
 .paragraph {
   position: absolute;
   left: 50%;
