@@ -57,29 +57,6 @@ html {
   margin: 0px;
   padding: 0px;
 }
-#index-pg {
-  list-style-type: none;
-  padding:0px;
-  margin:0px;
-}
-#index-dd {
-  color:white;
-  background-color:transparent;
-  text-decoration: none;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-#index-dd:active {
-  color:grey;
-  background-color:transparent;
-  text-decoration: none;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-#index-dd:hover {
-  color:white;
-  background-color:transparent;
-  text-decoration: underline;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
 .icon-bar {
 background-color:#000000;
 }
